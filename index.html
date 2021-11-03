@@ -1,0 +1,219 @@
+<!--
+ Copyright 2021 Lucas Becker
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta
+      name="description"
+      content="Survey form made for practice with HTML and CSS"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div id="main">
+      <header id="title-header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          This is a mock survey form made as an assignment for a web development
+          bootcamp.<br />It's meant for practice with pure HTML and CSS.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div id="name-input" class="form-group">
+          <label for="name" id="name-label">Name:</label>
+          <input
+            type="text"
+            id="name"
+            class="form-group-input-fields"
+            name="name"
+            placeholder="first and last name"
+            required
+          />
+        </div>
+        <div id="email-input" class="form-group">
+          <label for="email" id="email-label">Email:</label>
+          <input
+            type="email"
+            id="email"
+            class="form-group-input-fields"
+            name="email"
+            placeholder="example@email.com"
+            required
+          />
+        </div>
+        <div id="smaller-inputs">
+          <div id="number-input" class="form-group">
+            <label for="number" id="number-label"
+              >What number am I thinking of?:</label
+            >
+            <input
+              type="number"
+              id="number"
+              class="form-group-input-fields"
+              name="number"
+              placeholder="1 to 10"
+              min="1"
+              max="10"
+            />
+          </div>
+          <div id="dropdown-input" class="form-group">
+            <label for="dropdown" id="dropdown-label"
+              >Choose your favorite color:</label
+            >
+            <select
+              id="dropdown"
+              class="form-group-input-fields"
+              name="dropdown"
+            >
+              <option value=""></option>
+              <option value="Red">Red</option>
+              <option value="Orange">Orange</option>
+              <option value="Yellow">Yellow</option>
+              <option value="Green">Green</option>
+              <option value="Blue">Blue</option>
+              <option value="Purple">Purple</option>
+            </select>
+          </div>
+          <div id="radio-input" class="form-group">
+            <label for="radio-input" id="radio-input-label"
+              >Choose your favorite kind of pet:</label
+            >
+            <div id="radio-input-buttons">
+              <div class="button-divs">
+                <input
+                  type="radio"
+                  id="dog"
+                  class="radio-input-button"
+                  name="favorite-pet"
+                  value="dog"
+                />
+                <label for="dog">Dog</label>
+              </div>
+              <div class="button-divs">
+                <input
+                  type="radio"
+                  id="cat"
+                  class="radio-input-button"
+                  name="favorite-pet"
+                  value="cat"
+                />
+                <label for="cat">Cat</label>
+              </div>
+              <div class="button-divs">
+                <input
+                  type="radio"
+                  id="fish"
+                  class="radio-input-button"
+                  name="favorite-pet"
+                  value="fish"
+                />
+                <label for="cat">Fish</label>
+              </div>
+              <div class="button-divs">
+                <input
+                  type="radio"
+                  id="bird"
+                  class="radio-input-button"
+                  name="favorite-pet"
+                  value="bird"
+                />
+                <label for="cat">Bird</label>
+              </div>
+            </div>
+          </div>
+          <div id="checkbox-input" class="form-group">
+            <label for="checkbox-input" id="checkbox-input-label"
+              >Which foods are delicious?:</label
+            >
+            <div id="checkbox-input-buttons">
+              <div class="button-divs">
+                <input
+                  type="checkbox"
+                  id="pizza"
+                  class="checkbox-input-button"
+                  name="favorite-foods"
+                  value="pizza"
+                />
+                <label for="dog">Pizza</label>
+              </div>
+              <div class="button-divs">
+                <input
+                  type="checkbox"
+                  id="french-fries"
+                  class="checkbox-input-button"
+                  name="favorite-foods"
+                  value="french-fries"
+                />
+                <label for="cat">French Fries</label>
+              </div>
+              <div class="button-divs">
+                <input
+                  type="checkbox"
+                  id="ice-cream"
+                  class="checkbox-input-button"
+                  name="favorite-foods"
+                  value="ice-cream"
+                />
+                <label for="cat">Ice Cream</label>
+              </div>
+              <div class="button-divs">
+                <input
+                  type="checkbox"
+                  id="bananas"
+                  class="checkbox-input-button"
+                  name="favorite-foods"
+                  value="bananas"
+                />
+                <label for="cat">Bananas</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="comment-textbox">
+          <label for="textarea-comments">Additional comments:</label>
+          <textarea
+            id="textarea-comments"
+            name="comments"
+            rows="8"
+            cols="40"
+            placeholder="enter comments here"
+            form="survey-form"
+          ></textarea>
+        </div>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+    <footer id="footer">
+      <p id="copyright">Copyright (c) Lucas Becker 2021</p>
+    </footer>
+    <script src="" async defer></script>
+  </body>
+</html>
