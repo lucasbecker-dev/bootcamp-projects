@@ -1,2 +1,5 @@
 # bootcamp-projects
-Projects made for my various bootcamp certifications, each stored as its own branch.
+
+## python-arithmetic-formatter
+
+Python project designed to solve and print simple arithmetic problems in a consistently formatted fashion.
